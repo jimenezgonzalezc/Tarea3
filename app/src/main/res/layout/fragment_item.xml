@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/imageView"
+        android:minWidth="70dp"
+        android:minHeight="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtId"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nombre: "
+        android:id="@+id/txtNombre"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Numero: "
+        android:id="@+id/txtNumero"
+        android:layout_alignLeft="@+id/txtNombre"
+        android:layout_alignStart="@+id/txtNombre"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tipo: "
+        android:id="@+id/txtTipo"
+        android:layout_alignLeft="@+id/txtNombre"
+        android:layout_alignStart="@+id/txtNombre"
+        android:layout_marginTop="90dp"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>
+</LinearLayout>
